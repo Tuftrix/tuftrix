@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request a Quote - Tuftrix</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="https://i.postimg.cc/BZrZjbrj/New-logo.png" alt="Tuftrix Logo">
+    <h1>Request a Quote</h1>
+  </header>
+
+  <h2>
+    Please take a moment to fill out the form. In the description section, please attach a photo of the ideal design and give as much detail as possible. This will later help us to get the best outcome for you. Thank you for choosing Tuftrix!
+  </h2>
+
+  <form id="quoteForm" action="https://formspree.io/f/xkggbezb" method="POST" enctype="multipart/form-data">
+    <label for="first-name">First Name</label>
+    <input type="text" id="first-name" name="first-name" required>
+
+    <label for="last-name">Last Name</label>
+    <input type="text" id="last-name" name="last-name" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="postcode">Postcode</label>
+    <input type="text" id="postcode" name="postcode" required>
+
+    <label for="budget">Budget</label>
+    <input type="number" id="budget" name="budget" required>
+
+    <label for="description">Description of Rug</label>
+    <textarea id="description" name="description" rows="5" placeholder="Include measurements, colors, and idea details here..." required></textarea>
+
+    <label for="photo">Attach a Photo</label>
+    <input type="file" id="photo" name="photo" accept="image/*">
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <footer>
+    <p>Follow us:</p>
+    <a href="https://www.facebook.com/profile.php?id=61564386923899" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/tuftrix/" target="_blank">Instagram</a>
+    <a href="https://www.youtube.com/@Tuftrix" target="_blank">YouTube</a>
+    <a href="https://www.tiktok.com/@tuftrix" target="_blank">TikTok</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
