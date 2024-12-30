@@ -178,25 +178,25 @@ window.addEventListener("scroll", function () {
  const closeMenu = document.getElementById("close-menu");
  const menuContent = document.getElementById("burger-menu-content");
  const blurOverlay = document.getElementById("blur-overlay");
- const menuLinks = menuContent.querySelectorAll("a"); // Select all links in the menu
+ const menuLinks = menuContent.querySelectorAll(".burger-menu-link"); 
  
  function closeMenuHandler() {
    menuContent.classList.remove("active");
    blurOverlay.classList.remove("active");
-   document.body.classList.remove("menu-active"); // Remove the class from body
+   document.body.classList.remove("menu-active"); 
  }
  
  burgerMenu.addEventListener("click", () => {
    menuContent.classList.add("active");
    blurOverlay.classList.add("active");
-   document.body.classList.add("menu-active"); // Add the class to body
+   document.body.classList.add("menu-active"); 
  });
  
  closeMenu.addEventListener("click", closeMenuHandler);
  
  blurOverlay.addEventListener("click", closeMenuHandler);
  
- // Add event listeners to menu links
+
  menuLinks.forEach(link => {
    link.addEventListener("click", closeMenuHandler);
  });
