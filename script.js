@@ -158,3 +158,38 @@ function generateGallery(imageArray) {
 }
 
 generateGallery(imageArray);
+
+
+
+
+///////////////////////////////////
+
+
+// Sticky Header Script
+window.addEventListener("scroll", function () {
+  const header = document.querySelector(".header");
+  
+  const width = window.innerWidth;
+  const stickyOffset = width > 670 ? 225 : 50; 
+
+  if (window.scrollY >= stickyOffset) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+});
+
+ // Toggle Burger Menu
+ const burgerMenu = document.getElementById("burger-menu");
+ const closeMenu = document.getElementById("close-menu");
+ const menuContent = document.getElementById("burger-menu-content");
+
+ burgerMenu.addEventListener("click", () => {
+     menuContent.classList.add("active");
+     burgerMenu.style.display = "none";
+ });
+
+ closeMenu.addEventListener("click", () => {
+     menuContent.classList.remove("active");
+     burgerMenu.style.display = "block";
+ });
