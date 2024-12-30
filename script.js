@@ -100,17 +100,18 @@ function showAbout() {
   showSection("about-page");
 }
 
-
 function openFullscreen(img) {
   const modal = document.getElementById("fullscreen-modal");
   const fullscreenImg = document.getElementById("fullscreen-img");
   fullscreenImg.src = img.src;
   modal.style.display = "flex";
+  document.body.classList.add("menu-active");
 }
 
 function closeFullscreen() {
   const modal = document.getElementById("fullscreen-modal");
   modal.style.display = "none";
+  document.body.classList.remove("menu-active");
 }
 
 
@@ -122,7 +123,6 @@ function escapeHTML(str) {
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#039;");
 }
-
 
 function generateGallery(imageArray) {
   const galleryContainer = document.querySelector(".row.image-links");
@@ -159,12 +159,6 @@ function generateGallery(imageArray) {
 
 generateGallery(imageArray);
 
-
-
-
-///////////////////////////////////
-
-
 // Sticky Header Script
 window.addEventListener("scroll", function () {
   const header = document.querySelector(".header");
@@ -183,13 +177,26 @@ window.addEventListener("scroll", function () {
  const burgerMenu = document.getElementById("burger-menu");
  const closeMenu = document.getElementById("close-menu");
  const menuContent = document.getElementById("burger-menu-content");
-
+ const blurOverlay = document.getElementById("blur-overlay");
+ const menuLinks = menuContent.querySelectorAll("a"); // Select all links in the menu
+ 
+ function closeMenuHandler() {
+   menuContent.classList.remove("active");
+   blurOverlay.classList.remove("active");
+   document.body.classList.remove("menu-active"); // Remove the class from body
+ }
+ 
  burgerMenu.addEventListener("click", () => {
-     menuContent.classList.add("active");
-
+   menuContent.classList.add("active");
+   blurOverlay.classList.add("active");
+   document.body.classList.add("menu-active"); // Add the class to body
  });
-
- closeMenu.addEventListener("click", () => {
-     menuContent.classList.remove("active");
-
+ 
+ closeMenu.addEventListener("click", closeMenuHandler);
+ 
+ blurOverlay.addEventListener("click", closeMenuHandler);
+ 
+ // Add event listeners to menu links
+ menuLinks.forEach(link => {
+   link.addEventListener("click", closeMenuHandler);
  });
