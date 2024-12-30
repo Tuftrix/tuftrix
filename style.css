@@ -455,3 +455,30 @@ footer svg:hover {
     margin: auto auto;
 }
 }
+
+.blur-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  z-index: 999;
+}
+
+.blur-overlay.active {
+  display: block;
+}
+
+body.menu-active {
+  overflow: hidden; 
+  pointer-events: none; 
+}
+
+body.menu-active #burger-menu-content,
+body.menu-active #blur-overlay,
+body.menu-active #fullscreen-modal {
+  pointer-events: auto; 
+}
