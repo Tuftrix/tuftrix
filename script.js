@@ -186,10 +186,10 @@ window.addEventListener("scroll", function () {
 
  burgerMenu.addEventListener("click", () => {
      menuContent.classList.add("active");
-     burgerMenu.style.display = "none";
+
  });
 
  closeMenu.addEventListener("click", () => {
      menuContent.classList.remove("active");
-     burgerMenu.style.display = "block";
+
  });

@@ -1,11 +1,16 @@
 /* General Styles */
+@font-face {
+  font-family: 'Hadley'; 
+  src: url('fonts/Hadley.otf') format('opentype'); 
+}
+
 body,
 html {
   margin: 0;
   padding: 0;
-  font-family: Helvetica, sans-serif;
-  background-color: #f0e3cc;
-  color: black;
+  font-family: 'Hadley', sans-serif; 
+  background-color: #FFFAF7;
+  color: #790604;
   height: 100%;
 }
 
@@ -67,7 +72,7 @@ ul li {
 }
 
 ul a {
-  color: black;
+  color: #270505;
   text-decoration: none;
 }
 
@@ -86,12 +91,11 @@ footer svg {
   width: 40px;
   height: 40px;
   margin: 0 10px;
-  fill: black;
+  fill: #790604;
   transition: transform 0.2s ease, fill 0.2s ease;
 }
 
 footer svg:hover {
-  fill: #b8473f;
   transform: scale(1.2);
 }
 
@@ -113,12 +117,12 @@ footer svg:hover {
   height: 76px;
   line-height: 78px;
   font-size: 20px;
-  font-family: 'Bebas Neue', sans-serif;
-  background: linear-gradient(45deg, transparent 5%, #940023 5%);
+
+  background: linear-gradient(45deg, transparent 5%, #790604 5%);
   border: 0;
-  color: #fff;
+  color: #FFFAF7;
   letter-spacing: 3px;
-  box-shadow: 6px 0px 0px #e1725b;
+  box-shadow: 6px 0px 0px #F28500;
   outline: transparent;
   position: relative;
   user-select: none;
@@ -141,8 +145,8 @@ footer svg:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, transparent 3%, #e1725b 3%, #e1725b 5%, #940023 5%);
-  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #e1725b;
+  background: linear-gradient(45deg, transparent 3%, #F28500 3%, #F28500 5%, #790604 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #F28500;
   clip-path: var(--slice-0);
 }
 
@@ -281,7 +285,7 @@ footer svg:hover {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #f0e3cc;
+  background-color: #FFFAF7;
 }
 
 .sticky + .page-content {
@@ -311,11 +315,14 @@ footer svg:hover {
 }
 
 .socials svg{
-  width: 20px;
   height: 30px;
   margin: 2px 6px;
-  fill: black;
+  fill: #790604;
   transition: transform 0.2s ease, fill 0.2s ease;
+}
+
+.socials svg:hover {
+  transform: scale(1.2);
 }
 .socials{
   position: absolute;
@@ -326,6 +333,10 @@ footer svg:hover {
 }
 .burger-menu{
   padding-top: 20px;
+}
+
+.burger-menu-container svg {
+  fill: #790604;
 }
 
 @media screen and (max-width: 670px) {
@@ -427,12 +438,12 @@ footer svg:hover {
     .burger-menu-content ul li a {
         text-decoration: none;
         font-size: 18px;
-        color: #333;
+        color: #790604;
         transition: color 0.3s ease;
     }
 
     .burger-menu-content ul li a:hover {
-        color: #e2725c;
+        color: #F28500;
     }
 }
 
