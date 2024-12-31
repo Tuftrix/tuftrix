@@ -82,9 +82,9 @@ if (typeof Tally !== "undefined") {
 }
 
 function showSection(id) {
-  const sections = ["quote-page", "gallery-page", "about-page"];
+  const sections = ["quote-page", "home-page", "terms-page"];
   sections.forEach((section) => {
-    document.getElementById(section).style.display = section === id ? "flex" : "none";
+    document.getElementById(section).style.display = section === id ? "block" : "none";
   });
 }
 
@@ -92,12 +92,12 @@ function showQuote() {
   showSection("quote-page");
 }
 
-function showGallery() {
-  showSection("gallery-page");
+function showHome() {
+  showSection("home-page");
 }
 
-function showAbout() {
-  showSection("about-page");
+function showTerms() {
+  showSection("terms-page");
 }
 
 function openFullscreen(img) {
@@ -124,10 +124,10 @@ function escapeHTML(str) {
     .replace(/'/g, "&#039;");
 }
 
-function generateGallery(imageArray) {
-  const galleryContainer = document.querySelector(".row.image-links");
+function generateHome(imageArray) {
+  const homeContainer = document.querySelector(".row.image-links");
 
-  galleryContainer.innerHTML = "";
+  homeContainer.innerHTML = "";
 
   imageArray.forEach((item) => {
     const colDiv = document.createElement("div");
@@ -141,23 +141,23 @@ function generateGallery(imageArray) {
       <!-- ${name} -->
       <div>
         <img src="${img1}" 
-          class="gallery-img w-100 shadow-1-strong rounded" 
+          class="home-img w-100 shadow-1-strong rounded" 
           alt="${name} Image 1" 
           onclick="openFullscreen(this)" />
       </div>
       <div>
         <img src="${img2}" 
-          class="gallery-img w-100 shadow-1-strong rounded" 
+          class="home-img w-100 shadow-1-strong rounded" 
           alt="${name} Image 2" 
           onclick="openFullscreen(this)" />
       </div>
     `;
 
-    galleryContainer.appendChild(colDiv);
+    homeContainer.appendChild(colDiv);
   });
 }
 
-generateGallery(imageArray);
+generateHome(imageArray);
 
 // Sticky Header Script
 window.addEventListener("scroll", function () {

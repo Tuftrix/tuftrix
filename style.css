@@ -44,7 +44,7 @@ iframe {
   overflow: hidden;
 }
 
-#about-page {
+#terms-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,7 +54,7 @@ iframe {
   box-sizing: border-box;
 }
 
-.about-heading {
+.terms-heading {
   font-weight: bold;
   font-size: 28px;
   margin-bottom: 20px;
@@ -236,7 +236,7 @@ footer svg:hover {
 }
 
 
-.gallery-container {
+.home-container {
   padding: 20px;
   max-width: 1200px;
   margin: auto;
@@ -263,7 +263,7 @@ footer svg:hover {
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 }
 
-.gallery-container .row>div>div {
+.home-container .row>div>div {
   margin: 0 20px;
 }
 
@@ -273,7 +273,7 @@ footer svg:hover {
   margin-bottom: 10px;
 }
 
-.gallery-img {
+.home-img {
   width: 100%;
   height: 250px;
   object-fit: cover;
@@ -312,6 +312,14 @@ footer svg:hover {
 
 .sticky .nav-button{
   margin-right: 20px;
+}
+
+.request-button{
+  display: flex;
+  background-color: #790604;
+  color: #FFFAF7;
+  align-items: center;
+  justify-content: center;
 }
 
 .socials svg{
