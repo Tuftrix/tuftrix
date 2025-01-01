@@ -321,6 +321,9 @@ footer svg:hover {
   align-items: center;
   justify-content: center;
 }
+request-button:hover{
+  border: solid 1px;
+}
 
 .socials svg{
   height: 30px;
