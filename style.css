@@ -321,8 +321,8 @@ footer svg:hover {
   align-items: center;
   justify-content: center;
 }
-request-button:hover{
-  border: solid 1px;
+.request-button:hover{
+  border: solid 1px #790604;
 }
 
 .socials svg{
