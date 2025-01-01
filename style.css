@@ -1,4 +1,3 @@
-/* General Styles */
 @font-face {
   font-family: 'Hadley'; 
   src: url('fonts/Hadley.otf') format('opentype'); 
@@ -273,14 +272,6 @@ footer svg:hover {
   margin-bottom: 10px;
 }
 
-.home-img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
 .sticky {
   position: fixed;
   top: 0;
@@ -493,3 +484,88 @@ body.menu-active #blur-overlay,
 body.menu-active #fullscreen-modal {
   pointer-events: auto; 
 }
+
+.image-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.gallery-item {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.big-img-container {
+  flex: 2;
+}
+
+.big-img {
+  width: 100%;
+  aspect-ratio: 1 / 1; 
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.small-img-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.small-img {
+  width: 100%;
+  aspect-ratio: 1 / 1; 
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.image-caption {
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.image-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.horizontal-line {
+  border: 1px solid #ddd;
+  width: 90%;
+  margin: 10px auto 20px;
+  opacity: 1;
+}
+
+.load-more {
+  margin: 20px auto;
+  display: block;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: #790604;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-item {
+    flex-direction:  row;
+    align-items: center;
+  }
+
+  .small-img-container {
+    flex-direction: row;
+  }
+  .small-img-container {
+    display: none; 
+  }
+} 
