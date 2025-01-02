@@ -3,71 +3,72 @@
 const imageArray = [
   {
     name: "Charizard",
-    mainImg: "https://i.postimg.cc/P5kktS6C/Photo-24-09-2024-22-12-13.jpg",
-    sideImg1: "https://i.postimg.cc/SxXVv4L8/IMG-2605.avif", 
-    sideImg2: "https://i.postimg.cc/bwHfd1M3/Photo-24-09-2024-22-12-39.jpg"
+    mainImg: "/images/custom-rug-Charizard-1.webp",
+    sideImg1: "/images/custom-rug-Charizard-2.webp",
+    sideImg2: "/images/custom-rug-Charizard-3.webp"
   },
   {
     name: "Our Branding",
-    mainImg: "https://i.postimg.cc/25hGCxKS/IMG-1145.avif",
-    sideImg1: "https://i.postimg.cc/7YKQRXFv/IMG-1146.avif",
-    sideImg2: "https://i.postimg.cc/3rzcdgh4/IMG-1142.avif"
+    mainImg: "/images/tuftrix-branding-1.webp",
+    sideImg1: "/images/tuftrix-branding-2.webp",
+    sideImg2: "/images/tuftrix-branding-3.webp"
   },
   {
     name: "L&G",
-    mainImg: "https://i.postimg.cc/RZqbxKmW/IMG-1242.avif",
-    sideImg1: "https://i.postimg.cc/52GK4y9n/IMG-1244.avif",
-    sideImg2: "https://i.postimg.cc/KzFXWB9s/IMG-1243.avif"
+    mainImg: "/images/custom-rug-LandG-1.webp",
+    sideImg1: "/images/custom-rug-LandG-2.webp",
+    sideImg2: "/images/custom-rug-LandG-3.webp"
   },
   {
     name: "BreakTheART",
-    mainImg: "https://i.postimg.cc/zvR9NhKw/Photo-14-11-2024-15-07-23.jpg",
-    sideImg1: "https://i.postimg.cc/FRXPS6LS/IMG-3706.avif",
-    sideImg2: "https://i.postimg.cc/ydPqCxt6/IMG-3708.avif"
+    mainImg: "/images/custom-rug-Break-the-art-1.webp",
+    sideImg1: "/images/custom-rug-Break-the-art-2.webp",
+    sideImg2: "/images/custom-rug-Break-the-art-3.webp"
   },
   {
     name: "LFC",
-    mainImg: "https://i.postimg.cc/RFYj2d6V/Photo-14-11-2024-18-08-54.jpg",
-    sideImg1: "https://i.postimg.cc/J4r2KSdc/IMG-0871.avif",
-    sideImg2: "https://i.postimg.cc/CxBVnFBJ/IMG-0872.avif"
+    mainImg: "/images/custom-rug-LFC-1.webp",
+    sideImg1: "/images/custom-rug-LFC-2.webp",
+    sideImg2: "/images/custom-rug-LFC-3.webp"
   },
   {
     name: "Love",
-    mainImg: "https://i.postimg.cc/7ZpXvRXR/IMG-4238.avif",
-    sideImg1: "https://i.postimg.cc/hhWNtG1k/Photo-12-12-2024-21-05-24.jpg",
-    sideImg2: "https://i.postimg.cc/x1wVKWLQ/IMG-4239.avif"
+    mainImg: "/images/custom-rug-Love-1.webp",
+    sideImg1: "/images/custom-rug-Love-2.webp",
+    sideImg2: "/images/custom-rug-Love-3.webp"
   },
   {
     name: "Beroe",
-    mainImg: "https://i.postimg.cc/NG9MFPxD/Photo-12-12-2024-20-57-06.jpg",
-    sideImg1: "https://i.postimg.cc/BvKYX3Xs/IMG-4233.avif",
-    sideImg2: "https://i.postimg.cc/JhjVKPQk/IMG-4234.avif"
+    mainImg: "/images/custom-rug-Beroe-1.webp",
+    sideImg1: "/images/custom-rug-Beroe-2.webp",
+    sideImg2: "/images/custom-rug-Beroe-3.webp"
   },
   {
     name: "ARK",
-    mainImg: "https://i.postimg.cc/g0zFhnbd/Photo-19-10-2024-16-14-55.jpg",
-    sideImg1: "https://i.postimg.cc/sxy0kLfz/Full-Size-Render.avif",
-    sideImg2: "https://i.postimg.cc/nV2x6SfK/IMG-0681.avif"
+    mainImg: "/images/custom-rug-ARK-1.webp",
+    sideImg1: "/images/custom-rug-ARK-2.webp",
+    sideImg2: "/images/custom-rug-ARK-3.webp"
   },
   {
     name: "Go",
-    mainImg: "https://i.postimg.cc/RVbB03FN/IMG-0671.avif",
-    sideImg1: "https://i.postimg.cc/d3BSw9Dy/IMG-0673.avif",
-    sideImg2: "https://i.postimg.cc/xd6r3n9m/Photo-19-10-2024-16-08-49.jpg"
+    mainImg: "/images/custom-rug-Golang-1.webp",
+    sideImg1: "/images/custom-rug-Golang-2.webp",
+    sideImg2: "/images/custom-rug-Golang-3.webp"
   },
   {
     name: "Gaara",
-    mainImg: "https://i.postimg.cc/85c2y9C0/Photo-19-10-2024-16-07-58.jpg",
-    sideImg1: "https://i.postimg.cc/CMH2GwJx/IMG-0667.avif",
-    sideImg2: "https://i.postimg.cc/xTdQYG9w/IMG-0664.avif"
+    mainImg: "/images/custom-rug-Gaara-1.webp",
+    sideImg1: "/images/custom-rug-Gaara-2.webp",
+    sideImg2: "/images/custom-rug-Gaara-3.webp"
   },
   {
     name: "Sharingan",
-    mainImg: "https://i.postimg.cc/cHdR0G3F/IMG-3354.jpg",
-    sideImg1: "https://i.postimg.cc/JnKbhYcM/IMG-1454.avif",
-    sideImg2: "https://i.postimg.cc/HxRB8CqD/IMG-1455.avif"
+    mainImg: "/images/custom-rug-Sharingan-1.webp",
+    sideImg1: "/images/custom-rug-Sharingan-2.webp",
+    sideImg2: "/images/custom-rug-Sharingan-3.webp"
   }
 ];
+
 
 var d = document;
 var w = "https://tally.so/widgets/embed.js";
@@ -165,7 +166,7 @@ function generateHome(imageArray) {
           tabindex="0"
           aria-label="View ${name} Main Image in fullscreen" 
           onclick="openFullscreen(this)" 
-          onkeypress="if(event.key === 'Enter') openFullscreen(this)" />
+          onkeypress="if(event.key === 'Enter') openFullscreen(this)" loading="lazy"/>
       </div>
       <div class="small-img-container">
         <img src="${sideImg1}" 
@@ -175,7 +176,7 @@ function generateHome(imageArray) {
           tabindex="0"
           aria-label="View ${name} Side Image 1 in fullscreen" 
           onclick="openFullscreen(this)" 
-          onkeypress="if(event.key === 'Enter') openFullscreen(this)" />
+          onkeypress="if(event.key === 'Enter') openFullscreen(this)" loading="lazy"/>
         <img src="${sideImg2}" 
           class="small-img home-img" 
           alt="${name} Side Image 2" 
@@ -183,7 +184,7 @@ function generateHome(imageArray) {
           tabindex="0"
           aria-label="View ${name} Side Image 2 in fullscreen" 
           onclick="openFullscreen(this)" 
-          onkeypress="if(event.key === 'Enter') openFullscreen(this)" />
+          onkeypress="if(event.key === 'Enter') openFullscreen(this)" loading="lazy"/>
       </div>
       <div class="image-caption">
         <p class="image-name">${name}</p>
@@ -286,3 +287,13 @@ window.addEventListener("scroll", function () {
  menuLinks.forEach(link => {
    link.addEventListener("click", closeMenuHandler);
  });
+
+document.addEventListener("contextmenu", (e) => {
+  e.preventDefault();
+});
+
+document.addEventListener("dragstart", (e) => {
+  if (e.target.tagName === "IMG") {
+    e.preventDefault();
+  }
+});
