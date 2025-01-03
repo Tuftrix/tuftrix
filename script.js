@@ -98,6 +98,10 @@ function showSection(id) {
   sections.forEach((section) => {
     document.getElementById(section).style.display = section === id ? "block" : "none";
   });
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 }
 
 function showQuote() {
@@ -220,12 +224,6 @@ document.getElementById("load-more").addEventListener("click", () => {
 });
 
 generateHome(imageArray);
-
-function escapeHTML(str) {
-  const div = document.createElement("div");
-  div.innerText = str;
-  return div.innerHTML;
-}
 
 function resetGallery() {
   currentIndex = 0;

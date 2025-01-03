@@ -53,6 +53,26 @@ iframe {
   box-sizing: border-box;
 }
 
+#cookie-page, #privacy-page {
+  margin: 0 auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#cookie-policy-message {
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 .terms-heading {
   font-weight: bold;
   font-size: 28px;
@@ -96,6 +116,11 @@ footer svg {
 
 footer svg:hover {
   transform: scale(1.2);
+}
+@media (min-width: 1200px) {
+  .h1, h1 {
+    font-size: 2.4rem;
+}
 }
 
 @media (max-width: 1024px) {
@@ -569,3 +594,15 @@ body.menu-active #fullscreen-modal {
     display: none; 
   }
 } 
+
+.copyright-symbol {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: inherit;
+  line-height: 1;
+  font-weight: bold;
+  font-size: 40px;
+}
+.footer-link{
+  font-size: 20px;
+}
