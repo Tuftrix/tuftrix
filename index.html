@@ -11,6 +11,8 @@
         j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
           'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-TCHVVLNK');</script>
+  <script type="text/javascript"
+    src="https://app.termly.io/resource-blocker/f7332091-c1d3-457a-b511-3ef5aec2cf63?autoBlock=on"></script>
   <!-- End Google Tag Manager -->
   <link rel="icon" href="/images/logo_sticker.webp">
   <meta charset="UTF-8">
@@ -22,7 +24,6 @@
   <title>Tuftrix</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <meta name="google-site-verification" content="no9eTjxnb2Zakj_qPaNcQkJ_pX7PILOKKuDHiXNLe7Q" />
 </head>
 
@@ -65,8 +66,8 @@
 
   <header class="header" role="banner">
     <div class="nav-container">
-      <img src="/images/logo-tuftrix-web.webp" width="300px" height="144.844px" alt="Tuftrix Logo"
-        class="logo" loading="lazy">
+      <img src="/images/logo-tuftrix-web.webp" width="300px" height="144.844px" alt="Tuftrix Logo" class="logo"
+        loading="lazy">
       <nav class="text-center nav-button" role="navigation" aria-label="Primary Navigation">
         <button id="home-btn" class="btn btn-secondary button-49" role="button" onclick="showHome()"
           aria-label="Navigate to Home Section">Home</button>
@@ -122,12 +123,12 @@
                   </h1>
                   <p class="page-header-ui-text mb-2">
                     Bring comfort and style to any space. From quirky keyboard rugs for your desk to bespoke designs for
-                    your living room, we turn your ideas into reality—even if you don’t have a picture!
+                    your living room,
+                    we turn your ideas into reality—even if you don’t have a picture! Ready to transform your space with
+                    a unique, handcrafted rug?
                   </p>
                   <p class="page-header-ui-text mb-5">
-                    We proudly use high-quality materials sourced from local suppliers and offer international shipping
-                    at no extra cost. Ready to transform your space with a unique, handcrafted rug? Get your free quote
-                    today and experience comfort with a personal touch!
+                    Get your free quote today and experience comfort with a personal touch!
                   </p>
                   <div class="d-flex flex-column flex-sm-row justify-content-center">
                     <a class="btn btn-lg fw-500 me-sm-3 mb-3 mb-sm-0 request-button" onclick="showQuote()" href="#quote"
@@ -144,7 +145,7 @@
                 </div>
                 <div class="col-lg-6 d-none d-lg-block aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                   <img class="img-fluid" src="/images/landing-charizard.webp"
-                    alt="Artistic representation of Tuftrix handmade rugs" loading="lazy"/>
+                    alt="Artistic representation of Tuftrix handmade rugs" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -159,7 +160,8 @@
         <button id="load-more" class="load-more">Load More</button>
         <div id="fullscreen-modal" class="fullscreen-modal" onclick="closeFullscreen()" role="dialog"
           aria-labelledby="fullscreen-img" aria-hidden="true">
-          <img id="fullscreen-img" class="fullscreen-img" alt="Fullscreen display of the selected image" loading="lazy"/>
+          <img id="fullscreen-img" class="fullscreen-img" alt="Fullscreen display of the selected image"
+            loading="lazy" />
         </div>
       </div>
     </section>
@@ -167,6 +169,7 @@
 
     <!-- START: Main Form Section -->
     <section id="quote-page" style="display: none;">
+
       <div class="form-container" aria-labelledby="quote-heading">
         <h2 id="quote-heading">Request a quote</h2>
         <iframe
@@ -174,13 +177,24 @@
           loading="lazy" width="100%" frameborder="0" marginheight="0" marginwidth="0" title="Request a quote form">
         </iframe>
       </div>
+      <div id="cookie-policy-message">
+        <h6>
+          <strong>COOKIE POLICY:</strong> To fill out your quote form, please <strong>DO NOT</strong> decline the
+          cookies. We use
+          <strong>Tally.com</strong> for our quote
+          forms and declining our cookies will cause the quote request form to disappear. To proceed please change the
+          preferences from :
+          <strong><a href="#" class="termly-display-preferences">Consent Preferences</a></strong>
+          Thank you!
+        </h6>
+      </div>
     </section>
     <!-- END: Main Form Section -->
 
     <!-- START: Terms Section -->
     <section id="terms-page" style="display: none;">
       <div class="form-container" aria-labelledby="terms-heading">
-        <h1 id="terms-heading" class="terms-heading">CUSTOMS ARE GENERALLY £20-£40 PER 10CM</h1>
+        <h1 id="terms-heading" class="terms-heading">CUSTOMS ARE GENERALLY £25-£45 PER 10CM SQUARE</h1>
         <ul>
           <li><strong>FULFILLMENT POLICY:</strong> All rugs are custom-made. There are <strong>NO REFUNDS,
               CANCELLATIONS,
@@ -192,18 +206,27 @@
           <li><strong>PRIVACY POLICY:</strong> I will <strong>NOT</strong> share any of your personal information (name,
             address, etc.) with anyone. Your trust is appreciated!</li>
           <li><strong>DISCLAIMER:</strong> I only have these (
-            <strong>INSTAGRAM:</strong> <a href="https://www.instagram.com/tuftrix/" target="_blank"
+            <strong>INSTAGRAM:</strong> <a class="footer-link" href="https://www.instagram.com/tuftrix/" target="_blank"
               aria-label="Visit Tuftrix Instagram">@tuftrix</a>,
-            <strong>TIKTOK:</strong> <a href="https://www.tiktok.com/@tuftrix" target="_blank"
+            <strong>TIKTOK:</strong> <a class="footer-link" href="https://www.tiktok.com/@tuftrix" target="_blank"
               aria-label="Visit Tuftrix TikTok">@tuftrix</a>,
-            <strong>YOUTUBE:</strong> <a href="https://www.youtube.com/@Tuftrix" target="_blank"
+            <strong>YOUTUBE:</strong> <a class="footer-link" href="https://www.youtube.com/@Tuftrix" target="_blank"
               aria-label="Visit Tuftrix YouTube">@Tuftrix</a>)
             business social media accounts, so please BEWARE OF SCAMMERS using my videos/posts!
           </li>
+          <li><strong>QUOTE FORM:</strong> Please make sure you <strong> ACCEPT </strong> the Cookie Policy and Privacy
+            Policy before submitting your quote. If you have already declined them you can change your preferences from
+            :
+            <strong><a href="#" class="termly-display-preferences">Consent Preferences</a></strong>
+          </li>
         </ul>
+        <a href="/Privacy-Policy/">Privacy Policy</a>
+        <a href="/Cookie-Policy/">Cookie Policy</a>
+        <a href="#" class="termly-display-preferences">Consent Preferences</a>
       </div>
     </section>
     <!-- END: Terms Section -->
+
   </div>
 
   <footer role="contentinfo" aria-labelledby="footer-heading">
@@ -238,8 +261,9 @@
           d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z" />
       </svg>
     </a>
+    <p class="footer-copyright text-center mt-3">Tuftrix <span class="copyright-symbol">©</span> 2024</p>
   </footer>
-  
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
