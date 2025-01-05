@@ -69,7 +69,6 @@ const imageArray = [
   }
 ];
 
-
 var d = document;
 var w = "https://tally.so/widgets/embed.js";
 
@@ -107,6 +106,34 @@ function closeFullscreen() {
   document.body.classList.remove("menu-active");
 }
 
+async function cacheImages() {
+  const cache = await caches.open("image-cache");
+  const urlsToCache = imageArray.flatMap((img) => [img.mainImg, img.sideImg1, img.sideImg2]);
+  await cache.addAll(urlsToCache);
+}
+
+cacheImages();
+
+async function getCachedImage(url) {
+  const cache = await caches.open("image-cache");
+  const cachedResponse = await cache.match(url);
+  if (cachedResponse) {
+    return cachedResponse.url;
+  }
+  return url;
+}
+async function getCachedImage(url) {
+  try {
+    const cache = await caches.open("image-cache");
+    const cachedResponse = await cache.match(url);
+    if (cachedResponse) {
+      return cachedResponse.url;
+    }
+  } catch (error) {
+    console.error("Error accessing cache:", error);
+  }
+  return url;
+}
 
 
 function escapeHTML(str) {
@@ -120,23 +147,22 @@ function escapeHTML(str) {
 let currentIndex = 0;
 const itemsPerLoad = 3;
 
-function generateHome(imageArray) {
+async function generateHome(imageArray) {
   const homeContainer = document.querySelector(".row.image-links");
 
-  // ARIA Live Region for loading updates
   const liveRegion = document.getElementById("aria-live-region");
-
   const imagesToShow = imageArray.slice(currentIndex, currentIndex + itemsPerLoad);
-  imagesToShow.forEach((item) => {
+
+  imagesToShow.forEach(async (item) => {
     const galleryItem = document.createElement("div");
     galleryItem.className = "gallery-item";
     galleryItem.setAttribute("role", "region");
     galleryItem.setAttribute("aria-label", `${item.name} Gallery Item`);
 
-    const name = escapeHTML(item.name);
-    const mainImg = escapeHTML(item.mainImg);
-    const sideImg1 = escapeHTML(item.sideImg1);
-    const sideImg2 = escapeHTML(item.sideImg2);
+    const name = escapeHTML(item.name || "Custom rug");
+    const mainImg = escapeHTML(await getCachedImage(item.mainImg));
+    const sideImg1 = escapeHTML(await getCachedImage(item.sideImg1));
+    const sideImg2 = escapeHTML(await getCachedImage(item.sideImg2));
 
     galleryItem.innerHTML = `
       <div class="big-img-container">
