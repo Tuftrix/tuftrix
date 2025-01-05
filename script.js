@@ -159,7 +159,7 @@ async function generateHome(imageArray) {
     galleryItem.setAttribute("role", "region");
     galleryItem.setAttribute("aria-label", `${item.name} Gallery Item`);
 
-    const name = escapeHTML(item.name || "Unnamed Image");
+    const name = escapeHTML(item.name || "Custom rug");
     const mainImg = escapeHTML(await getCachedImage(item.mainImg));
     const sideImg1 = escapeHTML(await getCachedImage(item.sideImg1));
     const sideImg2 = escapeHTML(await getCachedImage(item.sideImg2));
