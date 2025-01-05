@@ -7,12 +7,12 @@ const imageArray = [
     sideImg1: "/images/custom-rug-Charizard-2.webp",
     sideImg2: "/images/custom-rug-Charizard-3.webp"
   },
-  {
-    name: "Our Branding",
-    mainImg: "/images/tuftrix-branding-1.webp",
-    sideImg1: "/images/tuftrix-branding-2.webp",
-    sideImg2: "/images/tuftrix-branding-3.webp"
-  },
+  // {
+  //   name: "Our Branding",
+  //   mainImg: "/images/tuftrix-branding-1.webp",
+  //   sideImg1: "/images/tuftrix-branding-2.webp",
+  //   sideImg2: "/images/tuftrix-branding-3.webp"
+  // },
   {
     name: "L&G",
     mainImg: "/images/custom-rug-LandG-1.webp",
@@ -93,29 +93,6 @@ if (typeof Tally !== "undefined") {
   d.body.appendChild(s);
 }
 
-function showSection(id) {
-  const sections = ["quote-page", "home-page", "terms-page"];
-  sections.forEach((section) => {
-    document.getElementById(section).style.display = section === id ? "block" : "none";
-  });
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-}
-
-function showQuote() {
-  showSection("quote-page");
-}
-
-function showHome() {
-  showSection("home-page");
-}
-
-function showTerms() {
-  showSection("terms-page");
-}
-
 function openFullscreen(img) {
   const modal = document.getElementById("fullscreen-modal");
   const fullscreenImg = document.getElementById("fullscreen-img");
@@ -191,7 +168,7 @@ function generateHome(imageArray) {
           onkeypress="if(event.key === 'Enter') openFullscreen(this)" loading="lazy"/>
       </div>
       <div class="image-caption">
-        <p class="image-name">${name}</p>
+        <p class="image-name">- ${name} -</p>
         <hr class="horizontal-line" aria-hidden="true">
       </div>
     `;

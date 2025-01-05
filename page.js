@@ -33,3 +33,29 @@ document.addEventListener("dragstart", (e) => {
     e.preventDefault();
   }
 });
+
+function showSection(id) {
+  const sections = ["quote-page", "home-page", "terms-page"];
+  sections.forEach((section) => {
+    document.getElementById(section).style.display = section === id ? "block" : "none";
+  });
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
+function showQuote() {
+  showSection("quote-page");
+  document.title = "Get a Quote";
+}
+
+function showHome() {
+  showSection("home-page");
+  document.title = "Tuftrix Home";
+}
+
+function showTerms() {
+  showSection("terms-page");
+  document.title = "Terms and Conditions";
+}
